@@ -1,0 +1,13 @@
+
+.maincont{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+.table{
+    background-color: black;
+}
+.bottomicon:hover{
+    color:orange;
+
+}

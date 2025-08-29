@@ -1,0 +1,86 @@
+
+.card {
+    width: 200px;
+    height: 250px;
+    margin-top: 40px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    margin-right: 200px;
+    
+    
+  }
+  
+  .cardInner {
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    text-align: center;
+  }
+  .nav-item:hover .nav-link {
+    color: orange;
+  }
+  
+  
+  .card:hover .cardInner {
+    transform: rotateY(180deg);
+  }
+  
+  .cardFront,
+  .cardBack {
+    position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+
+
+  }
+  .slideRight {
+    animation: slideRight 3s ease-out forwards;
+  }
+  
+  @keyframes slideRight {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slideLeft {
+    animation: 3s slideLeft;
+  }
+  @keyframes slideLeft {
+    from {
+      transform:translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+  }
+
+  
+  
+
+  
+  .cardBack {
+    background: #8b5cf6;
+    color: white;
+    transform: rotateY(180deg);
+    height:250px;
+    width:250px;
+  }
+  .maincontain{
+    background-color: black;
+}
+.img{
+    height:250px;
+    width:300px;
+
+}
+  

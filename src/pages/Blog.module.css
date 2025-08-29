@@ -1,0 +1,21 @@
+.maincont{
+    background-color: black;
+   
+    width: 100vw;
+}
+.card{
+    width: 18rem;
+   height:20rem;
+   margin-bottom: 30px;
+ 
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.cardImg{
+   
+
+}
+.cardCont{
+    margin-bottom: 40px;
+}
